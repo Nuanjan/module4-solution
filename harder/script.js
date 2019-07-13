@@ -34,9 +34,10 @@ WARNING!!! WARNING!!!
 // See Lecture 52, part 2
 // (Note, Step 2 will be done in the SpeakHello.js file.)
   
+(function(){
+
 
   var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
-
 
 
 // STEP 10:
@@ -44,11 +45,12 @@ WARNING!!! WARNING!!!
 // using the 'speak' method or either helloSpeaker's or byeSpeaker's
 // 'speak' method.
 // See Lecture 50, part 1
-var firstLetter = function(names){
+
 for (var i=0;i<names.length; i++) {
-names[i].charAt(0);
-names[i].toLowerCase();
-}
+var firstLetter=names[i].charAt(0);
+
+
+
 
 // firstLetter(names);
 
@@ -67,14 +69,16 @@ names[i].toLowerCase();
   // 'j'. If the same, call byeSpeaker's 'speak' method with the current name
   // in the loop. Otherwise, call helloSpeaker's 'speak' method with the current
   // name in the loop.
- if ("J"||"j") {
-  byeSpeaker.speak(names);
+ if (firstLetter==="J"||firstLetter==="j") {
+  byeSpeaker.speak(names[i]);
     // byeSpeaker.xxxx
 
  } else {
-  helloSpeaker.speak(names);
+  helloSpeaker.speak(names[i]);
   //  helloSpeaker.xxxx
  }
-}
+
  
 
+}
+})();

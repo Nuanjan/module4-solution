@@ -10,10 +10,10 @@
 // var helloSpeaker =
 
 var helloSpeaker = {};
-helloSpeaker.name = " ";
+// helloSpeaker.name = " ";
 var speakWord = "Hello";
-helloSpeaker.speak=function speak(name) {
-  console.log(speakWord + " " + name);
+helloSpeaker.speak = function speak(name) {
+  console.log(speakWord +" "+ name);
 }
 
 // DO NOT attach the speakWord variable to the 'helloSpeaker' object.
