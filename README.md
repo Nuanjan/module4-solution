@@ -1,2 +1,2 @@
 # module4-solution
-module4-solution assignment
+Using simple Java script function 
